@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Samid Shaikh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="left common">
+                <div class="search">
+                    <input type="text" name="search" id="searchTerm" class="searchbox">
+                    <button type="submit" class="searchIcon" id="searchBtn"><img src="images/search.png" alt="search"></button>
+                </div>
+                <div class="weatherIcon">
+                    <img decoding="async" id="weatherIcn" loading="lazy" src="" alt="forecaste image" draggable="false">
+                </div>
+                <div class="temperature">
+                    <h2 id="tempC" class="temp"></h2><span class="gray">&deg;C</span>
+                </div>
+                <div class="cloudy">
+                    <p id="cloud">Mostly Cloudy</p>
+                </div>
+                <div class="seperator">
+                    <hr>
+                </div>
+                <div class="location">
+                    <p id="currLocation"></p>
+                </div>
+            </div>
+            <div class="right common">
+                <div class="boxContainer">
+                    <div class="box">
+                        <p class="title">Wind</p>
+                        <p class="mainContent" id="windSpeed"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Humidity</p>
+                        <p class="mainContent" id="humidity"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Real Feel</p>
+                        <p class="mainContent" id="realFeel"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">UV Index</p>
+                        <p class="mainContent" id="uvIndex"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Pressure</p>
+                        <p class="mainContent" id="pressure"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Wind Gust</p>
+                        <p class="mainContent" id="windGust"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Visibility</p>
+                        <p class="mainContent" id="visCard"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Cloud Cover</p>
+                        <p class="mainContent" id="cloudCard"></p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Precipitation</p>
+                        <p class="mainContent" id="precepcard"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
